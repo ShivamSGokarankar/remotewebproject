@@ -1,0 +1,123 @@
+body
+{
+    
+}
+
+.wrapper
+{
+    background-color: rgb(218, 218, 218); 
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.wrapper:after
+{
+content: "";
+display: block;
+clear: both;
+}
+.service h2
+{
+    color: rgb(190, 190, 190);
+    margin: 10px auto;
+    text-align: center;
+     
+}
+.service{
+    background-color: rgb(106, 89, 122);
+    float: left;
+    width: 29.33%;
+    height: 140px;
+    margin: 1%;
+    padding: 1%;
+    display: block;
+
+}
+.services:after
+{
+content: "";
+display: block;
+clear: both;
+
+}
+.content
+{
+    margin: 20px 1%;
+    background-color: rgb(194, 156, 52);
+    clear: both;
+    text-align: justify;
+
+}
+.content p 
+{
+    column-count: 2;
+    column-gap: 10px;
+    
+}
+section ,aside
+{
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+    float: left;
+    background-color: #999;
+    text-align: justify;
+}
+section h2 , aside h2 
+{
+    text-align: center;
+    border-bottom: 2px solid rgb(184, 184, 184);
+    border-radius: 1px;
+    border-top: 2px solid whitesmoke;
+    background-color: rgb(184, 184, 184);
+}
+.columns:after 
+{
+    content: "";
+    clear: both;
+    display: block;
+}
+nav ul:after 
+{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav
+{
+    margin-top: 20px;
+    background-color: rgb(150, 150, 150);
+    position: relative;
+    
+    width: 100%;
+
+}
+nav ul 
+{
+    
+    list-style: none;
+    padding: 30px;
+    
+}
+nav ul li 
+{
+
+    float: right;
+    padding: 10px 30px; 
+    background-color: black;
+    margin: 0 20px;
+}
+
+
+li a 
+{
+    color: #fff;
+    text-decoration: none;
+}
+li:hover
+{
+    background-color: #FFF;
+    padding: 12px 32px;
+}
+
