@@ -13,7 +13,7 @@ body,html {
     position: relative;
     width: 100vw;
     height: 10%;
-    background-color: #ccc;  
+    background-color: rgb(255, 153, 0); 
     padding: 5px;
     box-shadow: 0px 5px 3px rgb(114, 114, 114);
 }
@@ -63,6 +63,7 @@ body,html {
 
     border-radius: 10px;
     border:2px solid white;
+    background-color: white;
     box-shadow: 0px 5px 3px rgb(114, 114, 114);
     /* border: 2px solid lightsalmon; */
     transition: all ease;
@@ -71,7 +72,7 @@ body,html {
 #login-button:hover
 ,#signup-button:hover
 {
-    border:1px solid white;
+    border:2px solid white;
     box-shadow: 0px 0px 0px rgb(114, 114, 114);
      color: black;
     background-color: #ccc;
@@ -83,19 +84,20 @@ body,html {
     position: relative;
     height: 70vh;
     background-color: rgb(255, 255, 255);   
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 .section>.login-form-container
 {
-    display: inline-block;
-    border: 1px solid rgb(160, 160, 160);
+    /* display: inline-block; */
+    display: none;
+    border: 2px solid rgb(255, 153, 0);
     position: relative;
     width: 20%;
-    height: 40%;
+    height: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(255, 255, 255);
     box-shadow: 8px 20px 5px grey ;
     transition: ease-in-out 2s;
     border-radius: 10px;
@@ -126,36 +128,108 @@ color: rgb(71, 71, 71);
     font-size: 21px;
 }
 
+#show_password_label
+{
+    font-size: 12px;
+}
 .login-submitbutton
 {
     display: inline-block;
     margin: 20px;  
+    
 }
 .login-submitbutton input
 {
     width: 170%;
     height: 30px;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(255, 255, 255); 
     box-shadow: 0 5px 2px grey;
-    transition-duration: 0.5s;
     border-radius: 10px;
-    border:2px solid white;
-    box-shadow: 0px 5px 3px rgb(114, 114, 114);
-    /* border: 2px solid lightsalmon; */
+    border:2px solid rgb(19, 19, 19);
+    box-shadow: 0px 5px 3px rgb(114, 114, 114); 
+    border: 2px solid lightsalmon;
     transition: all ease;
     transition-duration: 1s;
 }
 .login-submitbutton input:hover
 {
-    border:1px solid white;
+    /* border:1px solid white;
     box-shadow: 0px 0px 0px rgb(114, 114, 114);
      color: black;
-    background-color: #ccc;
+    background-color: #ccc; */
+    background-color: rgb(214, 214, 214);
+    transition-duration: 0.5s;
+}
+
+.signup-form-container
+{
+    display: inline-block;
+    border: 2px solid rgb(255, 153, 0);
+    width: 22%;
+    height: 70%;
+    position: relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 10px;
+}
+.signup-form-element
+{
+    display: inline-block;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 12%;
+}
+
+.signup-form-element input
+{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 21px;
+    outline: none;
+}
+.signup-form-element-label
+{
+    padding:10px 0;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.signup-submit-button
+{
+    display: block;
+    padding: 10px 0;
+    position: relative;
+    float: right;
+}
+#show_password_label1
+{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.signup-submit-button input
+{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 255, 255); 
+    box-shadow: 0 5px 2px grey;
+    border-radius: 10px;
+    border:2px solid rgb(19, 19, 19);
+    box-shadow: 0px 5px 3px rgb(114, 114, 114); 
+    border: 2px solid lightsalmon;
+    transition: all ease;
+    transition-duration: 1s;
+}
+.signup-submit-button input:hover 
+{
+    background-color: rgb(214, 214, 214);
     transition-duration: 0.5s;
 }
 /*footer part css*/
 .footer
 { 
     height: 20vh;
-    background-color: #ccc;  
+    background-color: rgb(255, 153, 0);
 }
