@@ -2,7 +2,6 @@ body
 {
     
 }
-
 .wrapper
 {
     background-color: rgb(218, 218, 218); 
@@ -50,7 +49,7 @@ clear: both;
 }
 .content p 
 {
-    column-count: 2;
+    column-count: 4;
     column-gap: 10px;
     
 }

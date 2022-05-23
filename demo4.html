@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>
+ 
+</title>
+ <style>
+    body
+    {
+         
+        margin: 0;
+        padding: 0;
+    }
+    .clearfix
+    {
+        
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+    
+    .parent
+     {
+        position: absolute;
+        top: 50px; 
+        left: 20px;
+        background-color: rgb(0, 0, 0);
+         
+        width: 800px;  
+         
+    }
+    .child1,.child2
+    {
+        display: inline-block;
+        width: 300px;
+        height: 800px;
+        background-color: blueviolet;
+        
+    }
+    .child1 
+    { 
+    float: left;
+    position: relative;
+    left: 30px;
+    margin: 3%;
+    }
+
+    .child2 
+    {
+    float: right;
+    position: relative;
+    margin: 3%;
+    right: 30px;
+    }
+
+    .child2:hover::after
+    {
+        content: "shivam";
+        
+    }
+ </style>
+<body>
+     
+<div class="parent">
+
+    <div class="child1">
+    </div>
+    <div class="child2">
+    </div>
+     <div class="clearfix">
+
+     </div>
+     
+</div>
+</body>
+</html>

@@ -3,13 +3,15 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+     box-sizing: border-box; 
+     scroll-behavior: smooth; 
 }
 html 
 {
     font-size: 62.5%;
 }
 body{
+     
     font-family:'Montserrat' , ' sans-serif';
 }
 h1,h2,h3{
@@ -20,21 +22,23 @@ h1,h2,h3{
 {
     max-width: 1200px;
     width: 90%;
-    /* border: 1px solid white; */
+    /* border: 1px solid white;  */
     margin:  0 auto;
 }
+
  
-/********************************************************************************/
     .header
     {
         height: 100vh;
         background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)), url(../images/header-image.jpg);
-        width: 100vw;
+        margin: 0 auto; 
+       
         background-repeat: no-repeat;
         background-position:center;
         background-size: cover;
-        position: absolute;
+         
     }
+    
 
     .header .navbar .logo ,
     .header .navbar a
@@ -43,10 +47,10 @@ h1,h2,h3{
         text-decoration: none;
         font-size: 2rem;
     }
-
+    
     .header .navbar
     {
-        /* border: 1px solid rgb(167, 61, 61); */
+        /* border: 1px solid rgb(167, 61, 61);  */
         padding: 1rem;
         width: 100%;
         
@@ -60,7 +64,7 @@ h1,h2,h3{
     }
     .header .navbar .logo a
     {
-        /* border: 1px solid white; */
+         /* border: 1px solid white;  */
         float: left;
         font-size: 3.5rem;
         margin-top: 0.5rem;
@@ -75,12 +79,12 @@ h1,h2,h3{
         float: right;
         list-style: none;
         margin: 1rem;
-        /* border: 1px solid darkgoldenrod; */
+         /* border: 1px solid darkgoldenrod;  */
         
     }
     .header .navbar .navitems .nav-item
     {
-        /* border: 1px solid white; */
+         /* border: 1px solid white;  */
         display:inline-block ;
         text-transform: uppercase;
         padding: 0.8rem 1.4rem;
@@ -88,15 +92,16 @@ h1,h2,h3{
     }
     .navitems .nav-item a 
     {
-    transition: border 1s linear;
+    /* transition: border 1s linear; */
     }
     .navbar .navitems .nav-item a:hover
     {
         
-        border-bottom: 2px solid white; 
+           /* border-bottom: 2px solid white;  */
         cursor: default;
 
     }
+    
     .header-content
     {
         position: relative;
@@ -137,7 +142,7 @@ h1,h2,h3{
     {
          
         width: 100%;
-        /* border: 1px solid rgb(241, 128, 128); */
+        /* border: 1px solid rgb(241, 128, 128);  */
         padding: 2rem;
         margin: 2rem auto;
         text-align: center;
@@ -156,7 +161,7 @@ h1,h2,h3{
         text-transform: uppercase;
         text-decoration:none;
         font-size: 2rem;
-        border-radius: 100px;
+        border-radius: 100px;   
         font-weight: 500;
         transition: all 0.3s linear;
          
@@ -169,10 +174,116 @@ h1,h2,h3{
          box-shadow: 0px 0px 15px 3px rgb(255, 255, 255);
          color: white;
          background-color: rgb(0, 0, 0);
-         border: 2px solid rgb(252, 252, 252);
+         /* border: 2px solid rgb(252, 252, 252); */
+         
+    }
+
+                /* Section starts  */
+    .section 
+    {
+        background-color: rgb(0, 0, 0); 
+        height: 90vh; 
+         
+    }
+
+    .content-container
+    {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        height: 50%;
+        background-color: rgb(0, 0, 0);
+         
+    }
+     
+    .content-container-image 
+    {
+        float: left;
+        position: relative;
+        top: 10%;
+        left: 3%;
+        width: 40%; 
+        background: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0)), url(../images/indiagate.jpg);
+    }
+
+    .content-container-text #head
+    {
+        font-family:'Montserrat' , ' sans-serif';
+        font-size: 60px;
+        text-align: center;
+        width: 50%;
+        opacity: 0;
+        margin: 0 auto;  
+        transition: all ease-out 500ms;
+        
+    }
+
+    .content-container-text #info
+    {
+        font-family:'Montserrat' , ' sans-serif';
+        font-size: 15px;
+        text-align: justify;
+        padding: 20px;
+        opacity: 0;
+        transition: all ease-out 700ms;
+    }
+    .content-container-image ,.content-container-text
+    {
+        display: inline-block;
+        height: 80%;
+        width: 40%; 
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+         
+         
+         
+    }
+     
+    .content-container-image:hover + .content-container-text #head 
+    {
+        opacity: 0.7;
+        color: white;
+    }
+
+    .content-container-image:hover + .content-container-text #info 
+    {
+        opacity: 0.7;
+        color: white;
+    }
+    .content-container-image:hover  
+    {
+         background: linear-gradient(rgba(104, 79, 79, 0.2),rgba(0,0,0,0.4)), url(../images/indiagate.jpg);
+         background-size: cover;
+         background-position: center center;
+         background-repeat: no-repeat;
+         /* border: 4px solid rgb(8, 8, 8); */
+         /* border-style: groove; */
+         /* box-shadow: 0px 0px 5px 2px rgb(255, 255, 255); */
+
+    }  
+    .content-container-text
+    {
+        float: right;
+        position: relative;
+        right: 3%;
+        top: 10%;
          
     }
     
+    .content-container .clearfix::after
+    {
+        display: block;
+        clear: both;
+        content: "";
+
+    }
+     
+
+     
+     
+
+
     
     
 
