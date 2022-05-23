@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js"></script>
 </head>
@@ -32,7 +33,10 @@
                     <label>Password</label>
             </div>
             <div class="login-form-element">
-                <input type="password" >
+                <input id="password-field" type="password" 
+                style="width: 90%;" >
+                <i id="" class="fa fa-eye fa-5xs" 
+                style="padding:0px 0px" onmouseup="hidepassword();" onmousedown="showpassword();"></i>
             </div>
         
             <div class="login-submitbutton">
